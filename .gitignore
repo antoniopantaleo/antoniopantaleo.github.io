@@ -1,0 +1,12 @@
+.DS_Store
+.vscode
+
+*.log
+*.sql
+*.sqlite
+
+node_modules/
+
+wp-content/*
+!wp-content/themes
+!wp-content/plugins
