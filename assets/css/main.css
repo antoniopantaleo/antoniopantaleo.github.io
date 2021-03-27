@@ -269,7 +269,7 @@ button {
 #overlayer {
   position: fixed;
   z-index: 9999;
-  background: white;
+  background: #2c2d30;
   top: 0;
   left: 0;
   right: 0;
