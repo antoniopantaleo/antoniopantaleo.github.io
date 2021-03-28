@@ -1070,7 +1070,8 @@ canvas.particles-js-canvas-el {
 .hero-07 {
   background: url("https://placehold.co/1920x1280") no-repeat;
   background-size: cover;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
+  /* box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8); */
+  box-shadow: inset 0 0 0 2000px rgba(44, 45, 48, 1);
 }
 
 .hero-07 .scroll-down span {
