@@ -2208,6 +2208,9 @@ canvas.particles-js-canvas-el {
     padding-right: 0;
     padding-left: 0;
   }
+  .rounded-circle {
+    margin-top: 2.5em;
+  }
 }
 
 @media (max-width: 575px) {
