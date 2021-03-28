@@ -776,6 +776,31 @@ canvas.particles-js-canvas-el {
   }
 }
 
+.hero-03 .scroll-down span {
+  text-align: center;
+  position: absolute;
+  bottom: 40px;
+  z-index: 2;
+  left: calc(50% - 8px);
+  width: 30px;
+  height: 50px;
+  border-radius: 50px;
+  border: 3px solid white;
+}
+
+.hero-03 .scroll-down span:before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 10px;
+  left: calc(50% - 3px);
+  margin-top: 10px;
+  border-radius: 5px;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+  background-color: white;
+}
+
 /*-------------------------
           HERO-04
 -------------------------*/
@@ -1020,7 +1045,7 @@ canvas.particles-js-canvas-el {
     opacity: 1;
   }
   80% {
-    transform: translate(0, 20px);
+    transform: translate(0, -20px);
     opacity: 0;
   }
   100% {
@@ -1075,14 +1100,14 @@ canvas.particles-js-canvas-el {
 
 @keyframes sdb10 {
   0% {
-    transform: translate(0, 0);
+    transform: translate(0, 20px);
     opacity: 0;
   }
   40% {
     opacity: 1;
   }
   80% {
-    transform: translate(0, 20px);
+    transform: translate(0, 0);
     opacity: 0;
   }
   100% {
