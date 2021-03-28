@@ -782,7 +782,6 @@ canvas.particles-js-canvas-el {
   bottom: 40px;
   z-index: 2;
   left: calc(50% - 8px);
-  /* bottom: calc(10% - 150px); */
   width: 30px;
   height: 50px;
   border-radius: 50px;
@@ -1046,7 +1045,7 @@ canvas.particles-js-canvas-el {
     opacity: 1;
   }
   80% {
-    transform: translate(0, 20px);
+    transform: translate(0, -20px);
     opacity: 0;
   }
   100% {
@@ -1101,14 +1100,14 @@ canvas.particles-js-canvas-el {
 
 @keyframes sdb10 {
   0% {
-    transform: translate(0, 0);
+    transform: translate(0, 20px);
     opacity: 0;
   }
   40% {
     opacity: 1;
   }
   80% {
-    transform: translate(0, 20px);
+    transform: translate(0, 0);
     opacity: 0;
   }
   100% {
