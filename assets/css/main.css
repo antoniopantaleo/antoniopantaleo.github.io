@@ -2208,6 +2208,9 @@ canvas.particles-js-canvas-el {
     padding-right: 0;
     padding-left: 0;
   }
+  .d-inline-block {
+    margin-top: 6em;
+  }
 }
 
 @media (max-width: 575px) {
