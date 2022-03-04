@@ -1,0 +1,80 @@
+{{ if .Site.Data.homepage.client_and_work.enable }}
+<section id="portfolio" class="section section--border-bottom">
+  <div class="container">
+    <h2 class=" rad-animation-group rad-fade-down">
+      {{ .Site.Data.homepage.client_and_work.title }}
+    </h2>
+    <div class="row row--padded rad-animation-group rad-fade-down">
+      <div class="col-12">
+        <!--
+        <div class="clients">
+          {{ range .Site.Data.homepage.client_and_work.clients }}
+          <div class="clients__item">
+            <a href="#">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                width="80"
+                data-src="{{ .logo.x | absURL }}"
+                data-srcset="{{ .logo.x | absURL }} 1x, {{ .logo._2x | absURL }} 2x"
+                alt="{{ .alt }}"
+              />
+            </a>
+          </div>
+          {{ end }} 
+        </div> -->
+      </div>
+    </div>
+
+      {{with .GetPage "/works"}}
+          {{range $index, $work := .Pages}}
+          <div
+          class="row row--padded rad-animation-group rad-fade-down {{ if modBool $index 2 }} flex-column-reverse flex-md-row {{ end }}"
+        >
+        {{ if modBool $index 2 }}
+        <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+          <h3>{{ $work.Title }}</h3>
+          <p class="lead">
+            {{ $work.Content }}
+          </p>          
+          <a href='https://{{$work.Param "url"}}' class="btn btn-primary" target="_blank">
+            <i class='lni lni-{{ $work.Param "iconName" }}' style="font-size: 1.2em;"></i>
+            {{ $work.Param "buttonText" }}
+          </a>
+          </div>
+          <div class="col-12 col-md-7 pl-md-0 text-right">
+            <img
+              class='lozad img-responsive {{ cond (eq ( mod $index 4) 0) "img-clip-left-backward" "img-clip-left-forward" }}'
+              src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+              data-src="img/works/{{$work.Title}}.png"
+              data-srcset="img/works/{{$work.Title}}.png 1x, img/works/{{$work.Title}}@2x.png 2x"
+              alt="{{ $work.Title }}"
+            />
+        </div>
+        {{ else }}
+        <div class="col-12 col-md-7 pl-md-0 text-right">
+          <img
+            class='lozad img-responsive {{ cond (eq ( mod $index 4) 1)  "img-clip-right-backward" "img-clip-right-forward" }}'
+            src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+            data-src="img/works/{{$work.Title}}.png"
+            data-srcset="img/works/{{$work.Title}}.png 1x, img/works/{{$work.Title}}@2x.png 2x"
+            alt="{{ $work.Title }}"
+          />
+        </div>
+        <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+          <h3>{{ $work.Title }}</h3>
+          <p class="lead">
+            {{ $work.Content }}
+          </p>
+          <a href='https://{{$work.Param "url"}}' class="btn btn-primary">
+            <i class='lni lni-{{$work.Param "iconName"}}' style="font-size: 1.2em;"></i>
+            {{ $work.Param "buttonText" }}
+          </a>
+        </div>
+        {{end}}
+          </div>
+          {{end}}
+      {{ end }}
+  </div>
+</section>
+{{ end }}
