@@ -1,3 +1,5 @@
+# variables
+age: &age 25
 # homepage
 homepage:
   head:
@@ -7,7 +9,7 @@ showcase:
   enable: true
   title: "Hello, I’m Antonio."
   subtitle: "iOS & DevOps Engineer"
-  description: "I'm 25 and I work at <a target='_blank' href='https://www.alten.com'>Alten</a>, a worldwide technology consulting and engineering company."
+  description: [I'm, *age, 'and I work at <a target=''_blank'' href=''https://www.alten.com''>Alten</a>', a worldwide technology consulting and engineering company.]
   image:
     alt: "Showcase keyboard and mouse image"
     x: "img/showcase/showcase.png"

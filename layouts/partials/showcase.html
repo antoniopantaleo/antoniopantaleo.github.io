@@ -21,7 +21,7 @@
           >
         </h1>
         <p class="lead">
-          {{ .Site.Data.homepage.showcase.description | safeHTML }}
+          {{ delimit .Site.Data.homepage.showcase.description " " | safeHTML }}
         </p>
         
       </div>
