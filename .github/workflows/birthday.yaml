@@ -12,7 +12,7 @@ jobs:
     - name: checkout
       uses: actions/checkout@v2
     - name: install dependencies
-      run: sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install yq -y
+      run: sudo apt-get update && sudo apt-get upgrade -y && sudo snap install yq -y
     - name: update yaml
       run: bash .github/birthday.sh
     - name: commit
