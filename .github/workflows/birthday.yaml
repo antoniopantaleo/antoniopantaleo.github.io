@@ -3,7 +3,6 @@ name: Happy Birthday
 on:
   schedule:
     - cron: "0 0 14 5 *"
-  workflow_dispatch:
 
 jobs:
   happy-birthday:
