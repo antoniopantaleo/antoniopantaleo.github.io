@@ -9,7 +9,7 @@ showcase:
   enable: true
   title: "Hello, I’m Antonio."
   subtitle: "iOS & DevOps Engineer"
-  description: [I'm, *age, 'and I work at <a target=''_blank'' href=''https://www.alten.com''>Alten</a>', a worldwide technology consulting and engineering company.]
+  description: [I'm, *age, 'and I work at <a target=''_blank'' href=''https://www.reply.com/en/''>Reply</a>', a worldwide technology consulting and engineering company.]
   image:
     alt: "Showcase keyboard and mouse image"
     x: "img/showcase/showcase.png"
@@ -55,7 +55,7 @@ education:
 experience:
   enable: true
   title: "Experience"
-  description: "I develop native iOS and cross-platform mobile apps. In my daily life I work full-time as a DevOps engineer. I'm in love with open source community."
+  description: "I develop native iOS and cross-platform mobile apps. In my daily life I work full-time as a iOS developer. I'm in love with open source community."
   button:
     icon: "linkedin-original"
     btnText: "Linkedin"
@@ -65,12 +65,13 @@ experience:
     btnText: "Download My Resume"
     URL: "#"
   items:
+    - title: "iOS Developer"
+      company: "<a target='_blank' href='https://www.reply.com/en/'>Reply</a>"
+      duration: "Jun 2022 - Now"
     - title: "iOS & DevOps Engineer"
       company: "<a target='_blank' href='https://www.alten.com'>Alten</a>"
-      duration: "Jun 2021 - Now"
-    - title: "iOS & Android Developer"
-      company: "<a target='_blank' href='https://www.apperosrl.it'>Apperò srl</a>"
-      duration: "Sep 2019 - Oct 2019"
+      duration: "Jun 2021 - Jun 2022"
+    
 # Client & Work
 client_and_work:
   title: "Works"
@@ -121,7 +122,7 @@ contact:
   address:
     title: "Office"
     # TODO: Javascript UserAgent redirection script
-    address: '<a href="https://maps.apple.com/?ll=45.02064785326528,7.650285713454448">Via Pio VII 127, 10139 Torino</a>'
+    address: '<a href="https://maps.apple.com/?ll=45.101897, 7.668950">Via Cardinal Massaia 83, 10147 Torino</a>'
 # newsletter
 newsletter:
   enable: false
