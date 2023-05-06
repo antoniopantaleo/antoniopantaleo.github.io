@@ -53,11 +53,11 @@ title = "Antonio Pantaleo"
 
 [params.homepage.social]
   # twitter = "https://twitter.com/"
-  linkedin = "https://linkedin.com/in/"
-  github = "https://github.com/"
-  medium = "https://medium.com/"
-  reddit = "https://reddit.com/"
-  dribbble = "https://dribbble.com/"
+  linkedin = "https://www.linkedin.com/in/antonio-pantaleo/"
+  github = "https://github.com/antoniopantaleo"
+  # medium = "https://medium.com/"
+  reddit = "https://www.reddit.com/user/anouonauei"
+  # dribbble = "https://dribbble.com/"
 
 [build]
   writeStats = false

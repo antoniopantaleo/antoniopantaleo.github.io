@@ -6,20 +6,16 @@ keywords: ["about-me", "contact"]
 type: about
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Oh, hey. Glad to see you there!
 
-Hugo makes use of a variety of open source projects including:
+My name is Antonio, an engineer located in Turin, Italy, who likes calling himself a *techurious* (nope, that's not a strange kind of two-headed dinosaur. It's the union of the words *tech* and *curious*).
 
-- https://github.com/yuin/goldmark
-- https://github.com/alecthomas/chroma
-- https://github.com/muesli/smartcrop
-- https://github.com/spf13/cobra
-- https://github.com/spf13/viper
+Since I was a kid, I loved using computers. I was lucky to have some of them in my parents' house. I remember when I used PowerPoint to make quiz-like games whose final result was up to the user decisions (the *user* was always me; sad story).
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+I grow up with more and more interest in that thing called `code`. I studied for it and made it part of my life. I love making iOS apps, solve problems, creates projects with fancy names and logos and make scripts that can make my life easier (they call them Life-Hacks no?).
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+Currently I work as an iOS Engineer in [Iriscube Reply](https://www.reply.com/iriscube-reply/en/), where we make apps... don't move... for banks! Yeah banks! Where money comes from! I love my job and I like to put some little sparkles of nerdy things on it.
 
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
+If you wanna learn more about what I do, check my [GitHub](https://github.com/antoniopantaleo) and remeber:
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+> Nothing good happens after 2 AM
