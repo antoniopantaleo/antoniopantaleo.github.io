@@ -8,7 +8,7 @@ type: about
 
 Oh, hey. Glad to see you there!
 
-My name is Antonio, an engineer located in Turin, Italy, who likes calling himself a *techurious* (nope, that's not a strange kind of two-headed dinosaur. It's the union of the words *tech* and *curious*).
+My name is Antonio, an engineer located in Turin, Italy, who likes calling himself a *techurious* (nope, that's not a strange kind of two-headed dinosaur. It's the union of the words *technology* and *curious*).
 
 Since I was a kid, I loved using computers. I was lucky to have some of them in my parents' house. I remember when I used PowerPoint to make quiz-like games whose final result was up to the user decisions (the *user* was always me; sad story).
 
