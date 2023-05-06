@@ -6,15 +6,13 @@ languageCode = "en-us"
 baseurl = "https://example.com"
 title = "Antonio Pantaleo"
 
-
 [params]
   name = "Antonio Pantaleo"
   description = "Make a description"
   author = "Antonio Pantaleo"
   authorEmail = "antonio_pantaleo@icloud.com"
-  authorImage = "/foto.png"
+  authorImage = "/profile.png"
   autoDarkMode = true
-
   favicon = "favicon.ico"
 
 [params.homepage]
@@ -23,12 +21,14 @@ title = "Antonio Pantaleo"
   description = "Develop functional user interfaces and provide a valuable experience to customers."
   contact = "https://github.com/antoniopantaleo"
 
-[params.homepage.codepen]
-  username = "apvarun"
-  pens = ["MQaRKL", "RxodrP", "BmXGdm", "wdVypQ", "BmXGdm", "BmXGdm", "MQaRKL"]
+# Projects
 
-[params.homepage.resume]
-  skills = ["Visual Design", "Product Development"]
+[[params.homepage.project]]
+  title = "APDynamicGrid"
+  logo = "AP.png"
+  url = "https://github.com/antoniopantaleo/APDynamicGrid"
+
+# Work Experience
 
 [[params.homepage.resume.work]]
   name = "Alten"
@@ -42,6 +42,9 @@ title = "Antonio Pantaleo"
   role = "iOS Developer"
   duration = "Jun 2022 - Now"
 
+[params.homepage.resume]
+  skills = ["Visual Design", "Product Development"]
+
 [[params.homepage.resume.courses]]
   name = "Design Principles"
   provider = "UX Academy"
@@ -52,7 +55,7 @@ title = "Antonio Pantaleo"
   linkedin = "https://linkedin.com/in/"
   github = "https://github.com/"
   medium = "https://medium.com/"
-  # reddit = "https://reddit.com/"
+  reddit = "https://reddit.com/"
   dribbble = "https://dribbble.com/"
 
 [build]

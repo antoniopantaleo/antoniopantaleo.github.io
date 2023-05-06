@@ -2,7 +2,7 @@
 <article class="max-w-5xl mx-auto px-4">
   <h1 class="text-4xl font-bold mb-4">{{ .Title }}</h1>
   <div class="text-gray-600">{{ .Content }}</div>
-
+  
   <div class="card-list">
     {{ range .Data.Pages -}}
     <a class="block my-6" href="{{ .RelPermalink }}">
@@ -19,7 +19,7 @@
         {{ .Summary }}
       </div>
     </a>
-    {{ end -}}
+    {{ end }}
   </div>
 </article>
 {{ end }}
