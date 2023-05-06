@@ -27,8 +27,13 @@ title = "Antonio Pantaleo"
 
 [[params.homepage.project]]
   title = "APDynamicGrid"
-  logo = "AP.png"
+  logo = "APDynamicGrid.png"
   url = "https://github.com/antoniopantaleo/APDynamicGrid"
+
+[[params.homepage.project]]
+  title = "APUtils"
+  logo = "APUtils.png"
+  url = "https://github.com/antoniopantaleo/APUtils"
 
 # Work Experience
 
