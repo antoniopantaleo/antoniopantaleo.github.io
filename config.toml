@@ -1,9 +1,9 @@
 description = "Modern portfolio theme for your Hugo site."
-homepage = "https://github.com/apvarun/showfolio"
+homepage = "https://antoniopantaleo.github.io"
 tags = ["Hugo", "theme", "portfolio", "modern", "responsive"]
 features = ["clean", "gallery", "minimal", "minimalist", "mobile", "personal", "responsive", "simple", "tailwind", "projects", "white"]
 languageCode = "en-us"
-baseurl = "https://example.com"
+baseurl = "https://antoniopantaleo.github.io"
 title = "Antonio Pantaleo"
 
 [params]
