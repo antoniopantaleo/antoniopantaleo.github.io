@@ -4,6 +4,7 @@ title: "Placeholder Text"
 date: 2021-04-24
 description: "Lorem Ipsum Dolor Si Amet"
 tags: ["markdown", "text"]
+draft: true
 # featured_image: /featured-placeholder.jpg
 ---
 

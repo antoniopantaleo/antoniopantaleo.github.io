@@ -4,6 +4,7 @@ title: "Rich Content"
 date: 2021-04-24
 description: "A brief description of Hugo Shortcodes"
 tags: ["shortcodes", "privacy"]
+draft: true
 ---
 
 Hugo example <!--more-->

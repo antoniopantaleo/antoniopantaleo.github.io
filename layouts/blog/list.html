@@ -2,7 +2,11 @@
 <article class="max-w-5xl mx-auto px-4">
   <h1 class="text-4xl font-bold mb-4">{{ .Title }}</h1>
   <div class="text-gray-600">{{ .Content }}</div>
-  
+  {{ if eq (len .Data.Pages) 0 }}
+  Psss, some contents are landing here 🛬
+  </br>
+  Come back later
+  {{ else }}
   <div class="card-list">
     {{ range .Data.Pages -}}
     <a class="block my-6" href="{{ .RelPermalink }}">
@@ -21,5 +25,6 @@
     </a>
     {{ end }}
   </div>
+  {{ end }}
 </article>
 {{ end }}

@@ -13,12 +13,13 @@ title = "Antonio Pantaleo"
   authorEmail = "antonio_pantaleo@icloud.com"
   authorImage = "/profile.png"
   autoDarkMode = true
+  showEmailCTA = false
   favicon = "favicon.ico"
 
 [params.homepage]
   title = "Hey 👋 I'm Antonio"
   tagline = "iOS Developer"
-  description = "Develop functional user interfaces and provide a valuable experience to customers."
+  description = "git-addicted, focused on state of the art technologies. I develop applications, tools and libraries"
   contact = "https://github.com/antoniopantaleo"
 
 # Projects

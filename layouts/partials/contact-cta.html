@@ -1,12 +1,13 @@
+{{ if .Site.Params.showEmailCTA }}
 <section class="my-16 max-w-2xl mx-auto">
   <div class="text-4xl font-bold text-center">
-    Looking for a potential hire?
-    <br />
+    Wanna talk about code?
     <br />
     <a
-      class="text-5xl text-blue-400 hover:text-blue-ª00"
+      class="text-4xl text-blue-400 hover:text-blue-ª00"
       href="mailto:{{.Site.Params.authorEmail}}"
-      >Let's chat 📨</a
+      >Let's chat  📨</a
     >
   </div>
 </section>
+{{ end }}
