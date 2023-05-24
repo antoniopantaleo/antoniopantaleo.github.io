@@ -32,13 +32,13 @@ alias gss="git status --short"
 #### gshsm
 Stands for **g**it **s**ta**sh** **m**essage (letters are swapped for faster typing). It lets me create a new stash with a custom message
 ```bash
-alias gshsl="git stash -m"
+alias gshsm="git stash -m"
 ```
 
 #### gshsl
 Stands for **g**it **s**ta**sh** **l**ist (letters are swapped for faster typing). It lets me list all saved stashes
 ```bash
-alias gshsm="git stash list"
+alias gshsl="git stash list"
 ```
 
 #### gls
