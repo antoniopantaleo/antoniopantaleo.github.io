@@ -24,7 +24,6 @@ title = "Antonio Pantaleo"
   showEmailCTA = false
 
 # Projects
-
 [[params.homepage.project]]
   title = "APDynamicGrid"
   logo = "APDynamicGrid.png"
@@ -34,6 +33,12 @@ title = "Antonio Pantaleo"
   title = "APUtils"
   logo = "APUtils.png"
   url = "https://github.com/antoniopantaleo/APUtils"
+
+
+[[params.homepage.project]]
+  title = "ShellKit"
+  logo = "ShellKit.png"
+  url = "https://github.com/antoniopantaleo/ShellKit"
 
 # Work Experience
 
