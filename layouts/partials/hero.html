@@ -34,12 +34,18 @@
   </p>
 
   {{ with .Site.Params.homepage.contact }}
+  <div class="items-center flex flex-col md:flex-row gap-4">
+
   <a
     href="{{ . }}"
     rel="noopener noreferrer"
     target="_blank"
     class="px-6 py-4 rounded-full font-semibold text-lg bg-black text-white hover:bg-gray-800 transition-colors dark:bg-white dark:text-black dark:hover:bg-gray-200"
-    >See what I do</a
-  >
+    >See what I do</a>
+
+    <a href="AntonioPantaleo.pkpass">
+      <img src="wallet-button.svg" style="width:10em" alt="Add to Wallet"/>
+    </a>
+  </div>
   {{ end }}
 </section>
