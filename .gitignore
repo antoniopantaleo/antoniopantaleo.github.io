@@ -35,4 +35,7 @@ themes/raditian/exampleSite
 
 node_modules
 
+AntonioPantaleo.pass
+signpass
+
 # End of https://www.toptal.com/developers/gitignore/api/hugo,visualstudiocode
