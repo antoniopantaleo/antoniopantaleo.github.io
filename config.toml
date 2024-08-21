@@ -76,4 +76,4 @@ title = "Antonio Pantaleo"
 # syntax highlight settings
 [markup]
   [markup.highlight]
-    style = "nord"
+    style = "catppuccin-frappe"
