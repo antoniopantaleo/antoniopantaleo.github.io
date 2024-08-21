@@ -33,12 +33,20 @@
 
   {{ if .Site.Params.autoDarkMode }}
   <script>
-    // On page load or when changing themes
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+  function setColorScheme(scheme) {
+    if (scheme == "dark") {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
+  }
+  const currentTheme = localStorage.getItem("dark-mode-theme") || 'dark';
+  setColorScheme(currentTheme)
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    const colorScheme = event.matches ? "dark" : "light";
+    setColorScheme(colorScheme)
+    localStorage.setItem("dark-mode-theme", colorScheme);
+  });
   </script>
   {{ end }}
 </head>
