@@ -40,7 +40,7 @@ commit id: "A3"
 commit id: "A4" tag: "master"
 ```
 
-Here, the `master` branch (**A7**) has nothing to do with `feature` branch (**F4**); they represent two distinct states (commits) of the project.
+Here, the `master` branch (**A7**) has nothing to do with the `feature` branch (**F4**); they represent two distinct states (commits) of the project.
 They do have a common ancestor [^merge-base] (**A4**) but it's not enough to state that *`feature` branch was made from `master`*.
 
 ```mermaid
@@ -132,7 +132,7 @@ Running the command:
 ❯ git for-each-ref --help
 ```
 
-and searching for **is-base**, we discover that the branch research and choice is made using a *heuristic*.
+and searching for **is-base**, we discover that the branch research and choice are made using a *heuristic*.
 
 The Cambridge Dictionary defines *heuristic* as
 
