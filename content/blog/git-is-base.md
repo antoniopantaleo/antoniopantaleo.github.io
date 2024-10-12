@@ -24,6 +24,17 @@ In the git tree below, the `master` branch is nothing more than a mnemonic short
 ```mermaid
 %%{
     init: { 
+        'themeVariables': {
+          'tagLabelBackground': '#FFD800',
+          'git0': '#B5B4B4',
+          'git1': '#B5B4B4',
+          'git2': '#B5B4B4',
+          'git3': '#B5B4B4',
+          'git4': '#B5B4B4',
+          'git5': '#B5B4B4',
+          'git6': '#B5B4B4',
+          'git7': '#B5B4B4'
+        },
         'gitGraph': {
             'showBranches': false,
             'mainBranchName': 'master',
@@ -46,6 +57,17 @@ They do have a common ancestor [^merge-base] (**A4**) but it's not enough to sta
 ```mermaid
 %%{
     init: { 
+        'themeVariables': {
+          'tagLabelBackground': '#FFD800',
+          'git0': '#B5B4B4',
+          'git1': '#B5B4B4',
+          'git2': '#B5B4B4',
+          'git3': '#B5B4B4',
+          'git4': '#B5B4B4',
+          'git5': '#B5B4B4',
+          'git6': '#B5B4B4',
+          'git7': '#B5B4B4'
+        },
         'gitGraph': {
             'mainBranchName': 'master'
         }
@@ -73,11 +95,22 @@ commit id: "A7" tag: "master"
 ```
 
 What about the git tree below? `master` and `hotfix` are pointing to the same commit (**A6**).
-If we create a new branch `feature` from here and make a commit as shown below, which branch `feature` will be created from? `master` or `hotfix`?
+If we create a new branch `feature` from here and make a commit as shown, which branch `feature` will be created from? `master` or `hotfix`?
 
 ```mermaid
 %%{
-    init: { 
+    init: {
+        'themeVariables': {
+          'tagLabelBackground': '#FFD800',
+          'git0': '#B5B4B4',
+          'git1': '#B5B4B4',
+          'git2': '#B5B4B4',
+          'git3': '#B5B4B4',
+          'git4': '#B5B4B4',
+          'git5': '#B5B4B4',
+          'git6': '#B5B4B4',
+          'git7': '#B5B4B4'
+        },
         'gitGraph': {
             'mainBranchName': 'master',
             'mainBranchOrder': 1
@@ -100,6 +133,17 @@ merge hotfix id: "A6" tag: "master" tag: "hotfix"
 ```mermaid
 %%{
     init: { 
+        'themeVariables': {
+          'tagLabelBackground': '#FFD800',
+          'git0': '#B5B4B4',
+          'git1': '#B5B4B4',
+          'git2': '#B5B4B4',
+          'git3': '#B5B4B4',
+          'git4': '#B5B4B4',
+          'git5': '#B5B4B4',
+          'git6': '#B5B4B4',
+          'git7': '#B5B4B4'
+        },
         'gitGraph': {
             'mainBranchName': 'master',
             'mainBranchOrder': 1
@@ -123,8 +167,8 @@ commit id: "F1" tag: "feature ?"
 
 ## Finding base [^nemo]
 
-Git’s new `is-base` format option prevents confusion and helps us understand Git more easily.
-It can be used to branch that is *most likely* the one used as a starting point for a given one. I want to point out the expression *most likely* here.
+Git’s new `is-base` format option prevents confusion and helps us answer this post's title more easily.
+It can be used to find the branch that is *most likely* the one used as a starting point for a given one. I want to point out the expression *most likely* here.
 
 Running the command:
 
@@ -140,12 +184,23 @@ The Cambridge Dictionary defines *heuristic* as
 
 We are talking about branches, so please consider *branches* here when it says *refs* (the same concept would be applied to tags or commits).
 
-The algorithm git uses to determine the most likely starting point for a given branch chooses the ref that *minimizes the number of commits in the first-parent history of the given branch and not in the first-parent history of the ref*. This is important to know when we use the `is-base` filtering since we must exclude the branch itself from the refs! If we include that, the minimum *distance* from the branch will be **0** if compared to the branch itself!
+The algorithm git uses to determine the most likely starting point for a given branch chooses the ref that *minimizes the number of commits in the first-parent history of the given branch and not in the first-parent history of the ref*. This is important to know when we use the `is-base` filtering since we must exclude the branch itself from the refs! If we include that, the minimum *distance* from the branch will be **0** if compared to itself!
 
 Let's say we are interested in knowing from which branch branch **D** was created considering the tree below:
 ```mermaid
 %%{
     init: { 
+        'themeVariables': {
+          'tagLabelBackground': '#FFD800',
+          'git0': '#B5B4B4',
+          'git1': '#B5B4B4',
+          'git2': '#B5B4B4',
+          'git3': '#B5B4B4',
+          'git4': '#B5B4B4',
+          'git5': '#B5B4B4',
+          'git6': '#B5B4B4',
+          'git7': '#B5B4B4'
+        },
         'gitGraph': { 
             'mainBranchName': 'A'
         }
@@ -206,6 +261,17 @@ Let's try another example:
 ```mermaid
 %%{
     init: { 
+        'themeVariables': {
+          'tagLabelBackground': '#FFD800',
+          'git0': '#B5B4B4',
+          'git1': '#B5B4B4',
+          'git2': '#B5B4B4',
+          'git3': '#B5B4B4',
+          'git4': '#B5B4B4',
+          'git5': '#B5B4B4',
+          'git6': '#B5B4B4',
+          'git7': '#B5B4B4'
+        },
         'gitGraph': { 
             'mainBranchName': 'A'
         }
