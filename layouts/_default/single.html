@@ -1,20 +1,32 @@
+{{ define "open-graph" }}
+{{ $content := printf "content/blog/%s.md" .File.BaseFileName }}
+{{ $file := readFile $content }}
+{{ $split := split $file "<!--more-->" }}
+{{ $firstPart := index $split 0 }}
+{{ $quote := replaceRE "^---(.|\n)*?---" "" $firstPart }}
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:description" content="{{ $quote }}" />
+<meta property="og:image" content="{{ printf " open-graph/%s.png" .File.BaseFileName }}" />
+{{end }}
+
 {{ define "main" }}
-<article class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-blue dark:prose-dark">
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-</article>
-{{ if .Store.Get "hasMermaid" }}
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-  mermaid.initialize(
-    {
-      startOnLoad: true,
-      theme: 'basic',
-      themeVariables: {
-        lineColor: '#FFFFFF'
-      }
-    }
-  );
-</script>
-{{ end }}
+  <article class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-blue dark:prose-dark">
+
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    </article>
+    {{ if .Store.Get "hasMermaid" }}
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+      mermaid.initialize(
+        {
+          startOnLoad: true,
+          theme: 'neutral',
+          themeVariables: {
+            lineColor: '#FFFFFF'
+          }
+        }
+      );
+    </script>
+    {{ end }}
 {{ end }}

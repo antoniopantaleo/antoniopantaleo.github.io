@@ -1,6 +1,54 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-  {{ partial "head.html" . }}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {{ block "open-graph" . }}
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta property="og:description" content="{{ .Site.Params.homepage.description }}" />
+    <meta property="og:image" content="open-graph/homepage.png" />
+    {{ end }}
+    <title>
+      {{ block "title" . }} {{- .Title }} - {{ .Site.Title -}} {{ end }}
+    </title>
+    {{- if .Description }}
+    <meta name="description" content="{{ .Description }}" />
+    {{ end -}}
+    {{- if .Keywords }}
+    <meta name="keywords" content="{{ delimit .Keywords " ," }}" />
+    {{ end -}}
+    {{- if .Params.Author }}
+    <meta name="author" content="{{ .Params.Author}}" />
+    {{ end -}}
+    {{ hugo.Generator }}
+  
+    {{- $styles := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
+    {{- if hugo.IsServer }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+    {{ else }}
+    {{- $styles := $styles| minify | fingerprint | resources.PostProcess -}}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" />
+    {{ end -}}
+  
+    {{ if .Site.Params.autoDarkMode }}
+    <script>
+      function setColorScheme(scheme) {
+        if (scheme == "dark") {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      }
+      const currentTheme = localStorage.getItem("dark-mode-theme") || 'dark';
+      setColorScheme(currentTheme)
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        const colorScheme = event.matches ? "dark" : "light";
+        setColorScheme(colorScheme)
+        localStorage.setItem("dark-mode-theme", colorScheme);
+      });
+    </script>
+    {{ end }}
+  </head>
   <body
     class="flex flex-col min-h-screen dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500"
   >
