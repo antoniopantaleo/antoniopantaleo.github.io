@@ -1,8 +1,8 @@
 ---
 author: Antonio Pantaleo
 title: Which branch did mine come from?
-date: 2024-10-09T20:03:38+02:00
-draft: true
+date: 2024-10-09T08:03:38+02:00
+draft: false
 ---
 
 The most asked and trickiest question may finally have an answer thanks to the latest version of git.
