@@ -5,6 +5,7 @@
   <meta property="og:image" content="/open-graph.png" />
   <meta property="og:url" content="https://antoniopantaleo.dev" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {{ template "_internal/google_analytics.html" . }}
   <title>
     {{ block "title" . }} {{- .Title }} - {{ .Site.Title -}} {{ end }}
   </title>
