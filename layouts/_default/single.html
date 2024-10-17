@@ -1,5 +1,17 @@
+{{ define "open-graph" }}
+{{ $content := printf "content/blog/%s.md" .File.BaseFileName }}
+{{ $file := readFile $content }}
+{{ $split := split $file "<!--more-->" }}
+{{ $firstPart := index $split 0 }}
+{{ $quote := replaceRE "^---(.|\n)*?---" "" $firstPart }}
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:description" content="{{ $quote }}" />
+<meta property="og:image" content="{{ printf " open-graph/%s.png" .File.BaseFileName }}" />
+{{end }}
+
 {{ define "main" }}
-<article class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-blue dark:prose-dark">
+  <article class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-blue dark:prose-dark">
+
     <h1>{{ .Title }}</h1>
     {{ .Content }}
     </article>
