@@ -7,7 +7,7 @@
     {{ block "open-graph" . }}
     <meta property="og:title" content="{{ .Title }}" />
     <meta property="og:description" content="{{ .Site.Params.homepage.description }}" />
-    <meta property="og:image" content="open-graph/homepage.png" />
+    <meta property="og:image" content="https://antoniopantaleo.dev/open-graph/homepage.png" />
     {{ end }}
     <title>
       {{ block "title" . }} {{- .Title }} - {{ .Site.Title -}} {{ end }}

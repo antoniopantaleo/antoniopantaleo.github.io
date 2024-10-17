@@ -6,7 +6,7 @@
 {{ $quote := replaceRE "^---(.|\n)*?---" "" $firstPart }}
 <meta property="og:title" content="{{ .Title }}" />
 <meta property="og:description" content="{{ $quote }}" />
-<meta property="og:image" content="{{ printf " open-graph/%s.png" .File.BaseFileName }}" />
+<meta property="og:image" content="{{ printf "https://antoniopantaleo.dev/open-graph/%s.png" .File.BaseFileName }}" />
 {{end }}
 
 {{ define "main" }}
