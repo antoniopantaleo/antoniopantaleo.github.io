@@ -14,7 +14,7 @@ When sharing a link, these platforms extract Open Graph metadata to create a vis
 
 I wanted to dynamically generate images for my blog posts and share them beautifully like this:
 
-{{< figure width="35%" src="/blog/how-to-create-open-graph-images-with-swiftui/imessage-open-graph.png" >}}
+{{< figure width="35%" src="/blog/open-graph/imessage-open-graph.png" >}}
 
 What a perfect opportunity for me to explore more web-oriented technologies and integrate Swift, my favourite language, into them!
 
