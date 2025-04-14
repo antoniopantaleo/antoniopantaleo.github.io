@@ -8,7 +8,7 @@ title = "Antonio Pantaleo"
 
 [params]
   name = "Antonio Pantaleo"
-  description = "Make a description"
+  description = ""
   author = "Antonio Pantaleo"
   authorEmail = "antonio_pantaleo@icloud.com"
   authorImage = "/profile.png"
@@ -27,18 +27,25 @@ title = "Antonio Pantaleo"
 [[params.homepage.project]]
   title = "APDynamicGrid"
   logo = "APDynamicGrid.png"
-  url = "https://github.com/antoniopantaleo/APDynamicGrid"
+  github = "https://github.com/antoniopantaleo/APDynamicGrid"
 
 [[params.homepage.project]]
   title = "APUtils"
   logo = "APUtils.png"
-  url = "https://github.com/antoniopantaleo/APUtils"
+  github = "https://github.com/antoniopantaleo/APUtils"
 
 
 [[params.homepage.project]]
   title = "ShellKit"
   logo = "ShellKit.png"
-  url = "https://github.com/antoniopantaleo/ShellKit"
+  github = "https://github.com/antoniopantaleo/ShellKit"
+
+
+[[params.homepage.project]]
+  title = "SpeedTest"
+  logo = "SpeedTest.png"
+  download = "SpeedTest.dmg"
+  github = "https://github.com/antoniopantaleo/SpeedTest"
 
 # Work Experience
 
