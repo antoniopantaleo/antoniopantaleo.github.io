@@ -1,25 +1,41 @@
 {{ define "main" }}
-<article class="max-w-5xl mx-auto px-4">
-  <h1 class="text-4xl font-bold mb-4">{{ .Title }}</h1>
-  <div class="text-gray-600">{{ .Content }}</div>
+<article class="max-w-5xl mx-auto px-4 min-h-screen">
+  <h1 class="text-4xl font-bold mb-8">{{ .Title }}</h1>
+  <div class="text-gray-600 mb-8 text-center">{{ .Content }}</div>
   {{ if eq (len .Data.Pages) 0 }}
-  Psss, some contents are landing here 🛬
-  </br>
-  Come back later
+    <div class="text-center text-lg text-gray-500 py-16">
+      Psss, some contents are landing here 🛬<br />
+      Come back later
+    </div>
   {{ else }}
-  <div class="card-list">
+  <div class="grid gap-8">
     {{ range .Data.Pages -}}
-    <a class="block my-6" href="{{ .RelPermalink }}">
+    <a class="block dark:bg-gray-700 rounded-xl shadow-md border border-gray-600 p-6"
+      href="{{ .RelPermalink }}">
       {{ $img := .Params.featured_image }}
       {{ $title := .Params.title }}
       {{ with $img }}
-      <img class="rounded max-w-full mb-4" src="{{ . }}" alt="{{ $title }}" />
+      <div class="aspect-w-16 aspect-h-9 mb-4 overflow-hidden rounded-lg">
+        <img class="object-cover w-full h-full" src="{{ . }}" alt="{{ $title }}" />
+      </div>
       {{ end }}
-      <h2 class="text-xl font-semibold mb-1">{{ $title }}</h2>
+      <h2 class="text-2xl font-semibold mb-2 dark:text-gray-300">
+        <div class="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-3">
+          <span>{{ $title }}</span>
+          <span class="flex-1"></span>
+          {{ with .Params.tags | sort }}
+          <span class="flex flex-wrap gap-2 mb-0">
+            {{ range . }}
+            <span class="inline-block bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded-full font-medium">{{ . | upper }}</span>
+            {{ end }}
+          </span>
+          {{ end }}
+        </div>
+      </h2>
       <p class="font-light mb-2 text-gray-500 text-sm">
         {{ .Params.date.Format "January 2, 2006" }}
       </p>
-      <div class="font-light text-gray-800 dark:text-gray-200">
+      <div class="font-light text-gray-800 dark:text-gray-200 line-clamp-3">
         {{ .Summary }}
       </div>
     </a>

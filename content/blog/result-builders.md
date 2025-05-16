@@ -3,6 +3,7 @@ author: Antonio Pantaleo
 title: Building DSLs in Swift with Result Builders
 date: 2025-05-05T12:30:00+02:00
 draft: false
+tags: ["swift"]
 ---
 
 You’ve all seen the magic of SwiftUI’s syntax, but do you know what makes it possible?

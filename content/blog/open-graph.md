@@ -3,6 +3,7 @@ author: Antonio Pantaleo
 title: Auto-Generate blog post images with SwiftUI
 date: 2025-01-18T13:00:16+02:00
 draft: false
+tags: ["swift", "swiftui"]
 ---
 
 SwiftUI and HTML make a great team, turning information into beautiful, shareable images -- automatically.

@@ -2,6 +2,7 @@
 author: Antonio Pantaleo
 title: Decorator Pattern, a personal favorite
 date: 2024-08-21T12:20:05+02:00
+tags: ["swift", "solid", "design patterns"]
 draft: false
 ---
 

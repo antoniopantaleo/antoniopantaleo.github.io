@@ -2,7 +2,7 @@
 author: Antonio Pantaleo
 title: How git aliases can save you hours of time
 date: 2023-05-17T19:39:19+02:00
-tags: ["git", "bash"]
+tags: ["git"]
 ---
 
 Imagine a coding world where you can navigate your Git repository, commit changes, and handle merges and branches at lightning speed.

@@ -2,6 +2,7 @@
 author: Antonio Pantaleo
 title: Which branch did mine come from?
 date: 2024-10-09T08:03:38+02:00
+tags: ["git"]
 draft: false
 ---
 
