@@ -1,10 +1,13 @@
-<section class="relative min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-purple-600 via-pink-500 to-red-500 text-white p-8">
-  <h1 class="text-5xl md:text-7xl font-extrabold mb-4">{{ .Site.Params.homepage.title }}</h1>
-  <p class="text-xl md:text-2xl font-light mb-8 max-w-2xl">{{ .Site.Params.homepage.tagline }}</p>
-  <p class="font-light mb-8 max-w-md">{{ .Site.Params.homepage.description }}</p>
-  {{ with .Site.Params.homepage.contact }}
-  <a href="{{ . }}" rel="noopener noreferrer" target="_blank" class="px-8 py-4 rounded-full font-semibold bg-white text-black hover:bg-gray-100 transition-colors">Get in touch</a>
-  {{ end }}
+<section class="relative min-h-screen flex items-center justify-center text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white px-8">
+  <div class="max-w-3xl">
+    <h1 class="text-6xl md:text-8xl font-extrabold mb-6">{{ .Site.Params.homepage.title }}</h1>
+    <p class="text-2xl md:text-3xl font-light mb-6">{{ .Site.Params.homepage.tagline }}</p>
+    <p class="font-light mb-10">{{ .Site.Params.homepage.description }}</p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#projects" class="px-8 py-4 rounded-full font-semibold bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 transition">Projects</a>
+      <a href="#posts" class="px-8 py-4 rounded-full font-semibold bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 transition">Blog</a>
+    </div>
+  </div>
   <div class="absolute bottom-10 animate-bounce">
     <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
   </div>
