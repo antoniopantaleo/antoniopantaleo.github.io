@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article class="max-w-5xl mx-auto px-4 min-h-screen">
+<article class="max-w-5xl mx-auto px-4 min-h-screen fade-in">
   <h1 class="text-4xl font-bold mb-8">{{ .Title }}</h1>
   <div class="text-gray-600 mb-8 text-center">{{ .Content }}</div>
   {{ if eq (len .Data.Pages) 0 }}
@@ -10,7 +10,7 @@
   {{ else }}
   <div class="grid gap-8">
     {{ range .Data.Pages -}}
-    <a class="block dark:bg-gray-700 rounded-xl shadow-md border border-gray-600 p-6"
+    <a class="block dark:bg-gray-700 rounded-xl shadow-md border border-gray-600 p-6 fade-in"
       href="{{ .RelPermalink }}">
       {{ $img := .Params.featured_image }}
       {{ $title := .Params.title }}
