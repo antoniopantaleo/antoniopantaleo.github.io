@@ -24,22 +24,31 @@ title = "Antonio Pantaleo"
   showEmailCTA = false
 
 # Projects
+
 [[params.homepage.project]]
-  title = "APDynamicGrid"
-  logo = "APDynamicGrid.png"
-  github = "https://github.com/antoniopantaleo/APDynamicGrid"
+  title = "wt"
+  logo = "wt.png"
+  github = "https://github.com/antoniopantaleo/wt"
 
 [[params.homepage.project]]
   title = "APUtils"
   logo = "APUtils.png"
   github = "https://github.com/antoniopantaleo/APUtils"
 
-
 [[params.homepage.project]]
   title = "ShellKit"
   logo = "ShellKit.png"
   github = "https://github.com/antoniopantaleo/ShellKit"
 
+[[params.homepage.project]]
+  title = "didi"
+  logo = "didi.png"
+  github = "https://github.com/antoniopantaleo/didi"
+
+[[params.homepage.project]]
+  title = "APDynamicGrid"
+  logo = "APDynamicGrid.png"
+  github = "https://github.com/antoniopantaleo/APDynamicGrid"
 
 [[params.homepage.project]]
   title = "SpeedTest"
