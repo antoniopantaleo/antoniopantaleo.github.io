@@ -1,7 +1,7 @@
-<section class="my-4 max-w-5xl mx-auto">
+<section class="my-16 max-w-5xl mx-auto">
   {{/* <div class="text-3xl font-bold mb-8">Resume</div> */}}
 
-{{ if .Site.Params.homepage.showWork }}
+  {{ if .Site.Params.homepage.showWork }}
   <div>
     <div class="text-3xl font-bold mb-4">Working Experience</div>
     <div class="flex flex-wrap">
@@ -17,7 +17,7 @@
     </div>
 
     {{ end }}
-    <!-- Skills 
+    <!-- Skills
     <div>
       <div class="text-2xl font-semibold mb-4">Skills</div>
       {{ range .Site.Params.homepage.resume.skills}}
@@ -27,7 +27,7 @@
 
   -->
 
-    <!-- Courses 
+    <!-- Courses
     <div>
       <div class="text-2xl font-semibold mb-4">Courses</div>
       {{ range .Site.Params.homepage.resume.courses}}

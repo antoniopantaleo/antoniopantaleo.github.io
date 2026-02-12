@@ -1,0 +1,25 @@
+<section id="projects" class="py-24 bg-gray-50 dark:bg-gray-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-16">Project Showcase</h2>
+    <div class="grid gap-12 md:grid-cols-2">
+      {{ range $index, $val := .Site.Params.homepage.project }}
+      <div class="relative rounded-2xl overflow-hidden group shadow-lg">
+        <img class="w-full h-64 object-cover" src="/projects/{{ $val.logo }}" alt="{{ $val.title }}" loading="lazy" />
+        <div class="absolute inset-0 bg-black/60 flex opacity-0 group-hover:opacity-100 transition items-center justify-center text-center text-white">
+          <div>
+            <h3 class="text-2xl font-semibold mb-4">{{ $val.title }}</h3>
+            <div class="flex justify-center space-x-4">
+              {{ if $val.github }}
+              <a class="px-4 py-2 bg-white text-black rounded-full text-sm font-medium" href="{{ $val.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+              {{ end }}
+              {{ if $val.download }}
+              <a class="px-4 py-2 bg-white text-black rounded-full text-sm font-medium" href="/projects/{{ $val.download }}" rel="noopener noreferrer">Download</a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
